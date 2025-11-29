@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const API_BASE_URL = 'https://airtable-backend-7sit.onrender.com/api/forms';
+const API_BASE_URL = 'https://airtable-backend-6u96.onrender.com/api/forms';
 
 function FormBuilder() {
   const urlParams = new URLSearchParams(window.location.search);
@@ -319,7 +319,7 @@ function FormBuilder() {
         <p className="text-sm mb-md">
           You need to authenticate with Airtable first. After authentication, you'll get a User ID.
           <br />
-          <a href="https://airtable-backend-7sit.onrender.com/auth/airtable/login" target="_blank" rel="noopener noreferrer">
+          <a href="https://airtable-backend-6u96.onrender.com/auth/airtable/login" target="_blank" rel="noopener noreferrer">
             Click here to authenticate with Airtable
           </a>
         </p>
@@ -372,7 +372,7 @@ function FormBuilder() {
               className="btn btn-secondary btn-sm"
               onClick={async () => {
                 try {
-                  const response = await fetch(`https://airtable-backend-7sit.onrender.com/auth/airtable/users`);
+                  const response = await fetch(`https://airtable-backend-6u96.onrender.com/auth/airtable/users`);
                   const users = await response.json();
                   console.log('Available users:', users);
                   alert(`Found ${users.length} user(s). Check console for details.`);
